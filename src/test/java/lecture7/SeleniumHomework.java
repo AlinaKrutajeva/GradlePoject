@@ -18,7 +18,7 @@ public class SeleniumHomework {
         driver.findElement(By.xpath("//input[@class='search-button']")).click();
         driver.findElement(By.xpath("//input[@placeholder='min']")).sendKeys("10");
         driver.findElement(By.xpath("//input[@placeholder='max']")).sendKeys("20");
-        driver.findElement(By.xpath("//a[@href='javascript:void(0);']")).click();
+        driver.findElement(By.xpath("//a[@class='ui-button narrow-go']")).click();
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
