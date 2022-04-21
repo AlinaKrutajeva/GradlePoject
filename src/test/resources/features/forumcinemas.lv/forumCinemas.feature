@@ -9,5 +9,5 @@ Feature: Test ForumCinemas user login page and validate user profile page
     And Enter user e-mail workjob@inbox.lv and password Homework10
     When Click login button
     And Open Profile Page
-    Then Validate that name is (.*) and surname is (.*)
+    Then Validate that name is Alina and surname is Krutajeva
 
