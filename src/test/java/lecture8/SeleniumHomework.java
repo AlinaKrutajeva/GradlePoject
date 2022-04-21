@@ -12,10 +12,13 @@ public class SeleniumHomework {
         @Test
         public void forumCinemasTest() {
             basePage.openChromeUrl("https://www.forumcinemas.lv/");
+            basePage.openLoginPage();
             basePage.loginToForumCinemas();
-            basePage.openForumCinemasProfilePage();
+            basePage.clickLoginButton();
+            basePage.openProfilePage();
             profilePagePom.enterName("Alina");
             profilePagePom.enterSurname("Krutajeva");
+            profilePagePom.validateNameAndSurname();
             profilePagePom.selectBirthDay("28");
             profilePagePom.selectBirthMonth("Maijs");
             profilePagePom.selectBirthYear("1994");

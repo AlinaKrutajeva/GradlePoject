@@ -27,6 +27,12 @@ public class ProfilePagePom extends BasePages {
         driver.findElement(userSurname).clear();
         driver.findElement(userSurname).sendKeys(surname);
     }
+    public void validateNameAndSurname() {
+        String nameText = driver.findElement(By.id("inputFirstName")).getAttribute("value");
+        assertThat(nameText).isEqualTo("Alina");
+        String surnameText = driver.findElement(By.id("inputLastName")).getAttribute("value");
+        assertThat(surnameText).isEqualTo("Krutajeva");
+    }
 
     public void selectBirthDay(String day) {
         driver.findElement(birthDay).sendKeys(day);
