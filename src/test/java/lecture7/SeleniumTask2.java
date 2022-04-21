@@ -11,7 +11,7 @@ public class SeleniumTask2 {
 
     @Test
     public void ssLvTest2() {
-        String driverPath = "C:\\Users\\a_lin\\IdeaProjects\\MyFirstGradlePoject\\src\\test\\resources\\chromedriver.exe";
+        String driverPath = "C:\\Users\\a_lin\\IdeaProjects\\MyFirstGradleProject\\src\\test\\resources\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", driverPath);
         ChromeDriver driver = new ChromeDriver();
         driver.manage().window().maximize();

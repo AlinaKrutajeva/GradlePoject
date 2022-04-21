@@ -11,7 +11,7 @@ public class SeleniumTask1 {
 
     @Test
     public void ssLvTest() {
-        String driverPath = "C:\\Users\\a_lin\\IdeaProjects\\MyFirstGradlePoject\\src\\test\\resources\\chromedriver.exe";
+        String driverPath = "C:\\Users\\a_lin\\IdeaProjects\\MyFirstGradleProject\\src\\test\\resources\\chromedriver.exe";
 //        Configure system for driver location in system
         System.setProperty("webdriver.chrome.driver", driverPath);
 //        Create driver object using path from system location
