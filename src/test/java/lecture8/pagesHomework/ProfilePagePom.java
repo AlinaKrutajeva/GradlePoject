@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ProfilePagePom extends BasePages {
+public class ProfilePagePom extends BasePage {
     private final By userName = By.id("inputFirstName");
     private final By userSurname = By.id("inputLastName");
     private final By birthDay = By.id("bdDay");

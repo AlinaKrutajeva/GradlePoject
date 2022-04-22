@@ -1,21 +1,25 @@
 package lecture8;
 
-import lecture8.pagesHomework.BasePages;
+import lecture8.pagesHomework.BasePage;
+import lecture8.pagesHomework.HomePage;
 import lecture8.pagesHomework.ProfilePagePom;
 import org.junit.Test;
 
 public class SeleniumHomework {
 
+
+    BasePage basePage = new BasePage();
+    HomePage homePage = new HomePage();
     ProfilePagePom profilePagePom = new ProfilePagePom();
-    BasePages basePage = new BasePages();
+
 
         @Test
         public void forumCinemasTest() {
             basePage.openChromeUrl("https://www.forumcinemas.lv/");
-            basePage.openLoginPage();
-            basePage.loginToForumCinemas();
-            basePage.clickLoginButton();
-            basePage.openProfilePage();
+            homePage.openLoginPage();
+            homePage.loginToForumCinemas();
+            homePage.clickLoginButton();
+            homePage.openProfilePage();
             profilePagePom.enterName("Alina");
             profilePagePom.enterSurname("Krutajeva");
             profilePagePom.validateNameAndSurname();
